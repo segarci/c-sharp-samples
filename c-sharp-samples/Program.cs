@@ -9,17 +9,18 @@ namespace c_sharp_samples
             string userInput;
 
             Console.WriteLine("[1] Basic program structure");
+            Console.WriteLine("Please, select option...");
             userInput = Console.ReadLine();
 
             switch (userInput)
             {
                 case "1":
-                    demo001();
+                    Demo001();
                     break;
             }
         }
 
-        static void demo001()
+        static void Demo001()
         {
             Console.WriteLine(KilometersToMeters(1));
             Console.WriteLine(KilometersToMeters(30));
