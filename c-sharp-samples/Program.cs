@@ -6,7 +6,30 @@ namespace c_sharp_samples
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string userInput;
+
+            Console.WriteLine("[1] Basic program structure");
+            userInput = Console.ReadLine();
+
+            switch (userInput)
+            {
+                case "1":
+                    demo001();
+                    break;
+            }
+        }
+
+        static void demo001()
+        {
+            Console.WriteLine(KilometersToMeters(1));
+            Console.WriteLine(KilometersToMeters(30));
+        }
+
+        static int KilometersToMeters(int kilometers)
+        {
+            int factor = 1000;
+
+            return kilometers * factor;
         }
     }
 }
